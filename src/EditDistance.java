@@ -18,7 +18,7 @@ public class EditDistance
         }
     }
 
-    public static int EditDist(String a, String b)
+    public static int EditDist(String a, String b, Boolean show)
     {
         int rows = a.length() + 1;
         int cols = b.length() + 1;
@@ -53,6 +53,11 @@ public class EditDistance
                     m.setElement(row, col, min + 1);
                 }
             }
+        }
+
+        if(show)
+        {
+            System.out.println("\n\nLevenshtein Matrix: \n\n" + m);
         }
         return (int) m.getElement(rows - 1, cols - 1);
     }

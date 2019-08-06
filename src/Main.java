@@ -20,7 +20,7 @@ public class Main
 			System.out.println("Did you mean " + match + "?");
 
 			System.out.println("Edit distance between: " + word + 
-			" and: " + match + " is " + EditDistance.EditDist(word, match));
+			" and: " + match + " is " + EditDistance.EditDist(word, match, true));
 		}
 	}
 }

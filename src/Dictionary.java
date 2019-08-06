@@ -41,7 +41,7 @@ public class Dictionary
 
     for(String word:words)
     {
-      int ed = EditDistance.EditDist(toFind,word);
+      int ed = EditDistance.EditDist(toFind, word, false);
 
       if(ed == 0)
       {
