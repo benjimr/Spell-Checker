@@ -1,5 +1,3 @@
-# Spell Checker
-
 Takes words from the user and checks if it is spelled correctly according to a wordlist containing the 10000 most used English words.
 
 This works by measuring the Levenshtein distance between the input word and the words in the word list and suggesting the closest word.
